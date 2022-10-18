@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-header">
+        <h1>Edit your information</h1>
+    </div>
+    <div class="card-body">
+
+        <label for="Name">Name:</label>
+        <div class="input-group">
+            <input type="text" [(ngModel)]="name" class="form-control" name="Nome" required tabindex="1">
+
+        </div>
+
+        <label for="User">User:</label>
+        <div class="input-group">
+            <input type="text" [(ngModel)]="user" class="form-control" user="User" required tabindex="1">
+
+        </div>
+
+        <label for="nascimento">Birthday:</label>
+        <div> <input type="date" [(ngModel)]="birth" class="form-control" birth="Data" required tabindex="1">
+        </div>
+
+        <label for="documento">Document:</label>
+        <div>
+            <input type="text" [(ngModel)]="document" class="form-control" document="CPF" required tabindex="1">
+
+        </div>
+
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" [(ngModel)]="email" class="form-control" email="E-mail" required tabindex="1">
+
+        </div>
+
+        <div>
+            <label for="senha">Password:</label>
+            <input type="text" [(ngModel)]="password" class="form-control" password="Password" required tabindex="1">
+
+
+        </div>
+
+    </div>
+
+
+    <div class="card-footer">
+        <button class="btn btn-primary mr-2"
+            (click)="alterar(this.id,this.name,this.email,this.birth,this.document,this.user,this.password)">Alterar</button>
+    </div>
+</div>
